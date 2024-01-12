@@ -1,0 +1,24 @@
+<%- include("partials/_header") %>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5 offset-md-3 card bg-dark">
+                <div class="card-body">
+                    <form id="form" action="/add" method="POST">
+                        <div></div><input type="text" name="name" id="name" value="" placeholder="Name"
+                            class="form-control mb-3" autofocus />
+                        <span id="name_error" class="text-danger"></span>
+                        <input type="text" name="address" id="address" value="" placeholder="Address"
+                            class="form-control mb-3" />
+                        <span id="address_error" class="text-danger"></span>
+                        <input type="text" name="phone" id="phone" value="" placeholder="Phone"
+                            class="form-control mb-3" />
+                        <span id="phone_error" class="text-danger"></span><br>
+                        <button type="submit" class="btn btn-primary">Add customer</button>
+                        <a href="/" class="btn btn-primary">Back</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/add.js"></script>
+    <%- include("partials/_footer") %>

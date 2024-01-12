@@ -1,0 +1,14 @@
+body {
+  background: #202020;
+  color: white;
+}
+/* Custom CSS to switch positions of DataTables elements */
+.dataTables_length,
+.dataTables_filter {
+  float: right;
+}
+
+/* Adjust margin to create space between elements */
+.dataTables_length {
+  margin-right: 20px;
+}
