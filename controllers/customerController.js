@@ -10,7 +10,6 @@ export const addCustomers = async (req, res) => {
 };
 
 export const createCustomers = async (req, res) => {
-  alert('hii');
   const newCustomer = req.body;
   await pool.query("INSERT INTO customer set ?", [newCustomer]);
   res.redirect("/");
